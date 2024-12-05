@@ -9,5 +9,6 @@ namespace TodoApp.Infrastructure.Data
 
         public DbSet<TodoItem> TodoItems { get; set; }
         public DbSet<TodoList> TodoLists { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }
