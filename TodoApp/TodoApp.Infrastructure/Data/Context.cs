@@ -1,14 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using TodoApp.Domain.Entities;
 
-namespace TodoApp.Infrastructure.Data
+public class Context : DbContext
 {
-    public class Context : DbContext
-    {
-        public Context(DbContextOptions<Context> options) : base(options) { }
+    public Context(DbContextOptions<Context> options) : base(options) { }
 
-        public DbSet<TodoItem> TodoItems { get; set; }
-        public DbSet<TodoList> TodoLists { get; set; }
-        public DbSet<User> Users { get; set; }
-    }
+    public DbSet<TodoList> TodoLists { get; set; }
+    public DbSet<TodoItem> TodoItems { get; set; }
+    public DbSet<User> Users { get; set; }
 }

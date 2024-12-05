@@ -14,7 +14,7 @@ namespace TodoApp.Domain.Entities
         public bool OnPause { get; set; }
 
         // Foreign key to TodoApp
-        public int TodoAppId { get; set; }
+        public int TodoListId { get; set; }
 
     }
 }

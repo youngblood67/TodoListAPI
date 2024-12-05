@@ -1,3 +1,4 @@
+using TodoApp.Infrastructure.Data;
 
 namespace TodoApp.WebApi
 {
@@ -13,6 +14,8 @@ namespace TodoApp.WebApi
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddInMemoryDatabase();
 
             var app = builder.Build();
 
