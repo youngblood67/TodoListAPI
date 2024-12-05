@@ -49,9 +49,9 @@ namespace TodoApp.Infrastructure.Repositories
             return await _context.TodoItems.Where(t => t.TodoListId == todoAppId).ToListAsync();
         }
 
-        public async Task<IEnumerable<TodoItem>> GetSingleAsync(Expression<Func<TodoItem, bool>> predicat)
+        public async Task<TodoItem?> GetSingleAsync(Expression<Func<TodoItem, bool>> predicat)
         {
-            return await _context.TodoItems.Where(predicat).ToListAsync();
+            return await _context.TodoItems.Where(predicat).FirstOrDefaultAsync();
         }
 
         public Task UpdateAsync(TodoItem item)
