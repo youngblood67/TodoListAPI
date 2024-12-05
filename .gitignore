@@ -1,0 +1,14 @@
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/roadmap.sh
+/.vs
+/TodoList/.vs/TodoList
+/TodoList/Tests/TodoList.Application.Tests/obj
+/TodoList/Tests/TodoList.Infrastructure.Tests/obj
+/TodoList/Tests/TodoList.WebApi.Tests/obj
+/TodoList/TodoList.Application/obj
+/TodoList/TodoList.Domain/obj
+/TodoList/TodoList.Infrastructure/obj
+/TodoList/TodoList.WebApi/obj
