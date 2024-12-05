@@ -5,7 +5,9 @@ namespace TodoApp.Infrastructure.Data
 {
     public class Context : DbContext
     {
+        public Context(DbContextOptions<Context> options) : base(options) { }
+
         public DbSet<TodoItem> TodoItems { get; set; }
-        public DbSet<TodoApp.Domain.Entities.TodoApp> TodoApps { get; set; }
+        public DbSet<TodoList> TodoLists { get; set; }
     }
 }
