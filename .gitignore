@@ -14,3 +14,10 @@
 /TodoList/TodoList.WebApi/obj
 /TodoApp/.vs
 obj
+/TodoApp/TodoApp.WebApi/bin/Debug/net8.0
+/TodoApp/TodoApp.Infrastructure/bin/Debug/net8.0
+/TodoApp/TodoApp.Domain/bin/Debug/net8.0
+/TodoApp/TodoApp.Application/bin/Debug/net8.0
+/TodoApp/Tests/TodoApp.WebApi.Tests/bin/Debug/net8.0
+/TodoApp/Tests/TodoApp.Infrastructure.Tests/bin/Debug/net8.0
+/TodoApp/Tests/TodoApp.Application.Tests/bin/Debug/net8.0
