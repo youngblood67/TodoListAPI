@@ -15,7 +15,8 @@ namespace TodoApp.WebApi
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            builder.Services.AddInMemoryDatabase();
+            //builder.Services.AddInMemoryDatabase();
+            builder.Services.AddSqlServerDatabase();
 
             var app = builder.Build();
 

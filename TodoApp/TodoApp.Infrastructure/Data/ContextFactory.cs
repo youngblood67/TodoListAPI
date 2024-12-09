@@ -10,5 +10,11 @@ namespace TodoApp.Infrastructure.Data
             services.AddDbContext<Context>(option =>
                 option.UseInMemoryDatabase("TodoAppDb"));
         }
+
+        public static void AddSqlServerDatabase(this IServiceCollection services)
+        {
+            services.AddDbContext<Context>(option =>
+            option.UseSqlServer("Data Source=CHUCKY\\SQLEXPRESS;Initial Catalog=TodoAppDb;Integrated Security=True;Encrypt=False"));
+        }
     }
 }
